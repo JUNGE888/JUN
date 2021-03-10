@@ -53,7 +53,7 @@
  
  
  
-name: ZIYE 
+name: 笑谱 
  
 on: 
   workflow_dispatch: 
@@ -87,7 +87,7 @@ jobs:
         if: env.XL_URL 
         run: | 
           cd ~/gitee_q8qsTAUA_cThxc1RBVUE
-          node Task/6Svip120apk69.js 
+          node  Task/iboxpay.js
         env: 
            
           PUSH_KEY: ${{ secrets.PUSH_KEY }} 
