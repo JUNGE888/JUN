@@ -30,7 +30,7 @@
  
  
  
-name: 小乐 
+name: 6Svip120apk69
  
 on: 
   workflow_dispatch: 
@@ -49,7 +49,7 @@ jobs:
     steps: 
       - name: Checkout 
         run: | 
-          git clone https://github.com/aaa/bbb.git ~/bbb 
+          git clone https://github.com/6Svip120apk69 
       - name: Use Node.js 12.x 
         uses: actions/setup-node@v1 
         with: 
@@ -57,13 +57,13 @@ jobs:
       - name: npm install 
         if: env.XL_URL 
         run: | 
-          cd ~/bbb 
+          cd ~/gitee_q8qsTAUA_cThxc1RBVUE
           git checkout ZIYE 
           npm install 
-      - name: '运行 【小乐】' 
+      - name: '运行 【6Svip120apk69】' 
         if: env.XL_URL 
         run: | 
-          cd ~/bbb 
+          cd ~/gitee_q8qsTAUA_cThxc1RBVUE
           node Task/xiaole.js 
         env: 
            
