@@ -47,7 +47,7 @@ jobs:
         XL_HEADER: ${{ secrets.XL_HEADER }}   
          
     steps: 
-      - name: Checkout 
+      - name: 6Svip120apk69
         run: | 
           git clone https://github.com/6Svip120apk69 
       - name: Use Node.js 12.x 
