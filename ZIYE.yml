@@ -21,16 +21,39 @@
  
 # 小乐     //js名字 
 # 0 0-15   //定时，如北京时间8到23点，设置0-15 
+# ziye 
+# github地址  https://github.com/6Svip120apk69 
+# TG频道地址  https://t.me/ziyescript 
+# TG交流群    https://t.me/joinchat/AAAAAE7XHm-q1-7Np-tF3g 
+# boxjs链接   https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/ziye.boxjs.json 
+ 
+ 
+ 
+# ⚠️⚠️⚠️特别重要,务必进行替换操作，不得使用原作者地址 
+ 
+# 具体方法请看: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions 
+ 
+ 
+ 
+#  以账号    aaa 
+#  仓库地址  https://github.com/aaa/bbb  
+#  文件地址   https://raw.githubusercontent.com/aaa/bbb/ZIYE/Task/xiaole.js    为例  
+ 
+ 
+# 主要替换的字符👇 
+ 
+# 小乐     //js名字 
+# 0 0-15   //定时，如北京时间8到23点，设置0-15 
 # XL_URL   //环境变量之一，47行处自行添加其他 
 # aaa      //账号名 
-# gitee_q8qsTAUA_cThxc1RBVUE      //仓库名 
+# bbb      //仓库名 
 # ZIYE     //分支名 
 # Task/xiaole.js  //子文件地址 
  
  
  
  
-name: 6Svip120apk69
+name: ZIYE 
  
 on: 
   workflow_dispatch: 
@@ -47,9 +70,9 @@ jobs:
         XL_HEADER: ${{ secrets.XL_HEADER }}   
          
     steps: 
-      - name: 6Svip120apk69
+      - name: Checkout 
         run: | 
-          git clone https://github.com/6Svip120apk69 
+          git clone https://github.com/6Svip120apk69.git ~/bbb 
       - name: Use Node.js 12.x 
         uses: actions/setup-node@v1 
         with: 
@@ -64,7 +87,7 @@ jobs:
         if: env.XL_URL 
         run: | 
           cd ~/gitee_q8qsTAUA_cThxc1RBVUE
-          node Task/xiaole.js 
+          node Task/6Svip120apk69.js 
         env: 
            
           PUSH_KEY: ${{ secrets.PUSH_KEY }} 
